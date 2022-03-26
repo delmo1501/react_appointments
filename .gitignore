@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Info de git
+# para crear nueva branch y editar fuera de main es git checkout -b new-header ma MA: es por el main
+# Una vez editado, lo agregas con git add . y luego git commint - "Here you have the changes"
+# Luego regresas de -b a main, git checkout main
+# En caso de ser mio y estar bien git merge new-header y listo pero tenemos una branch al pedo, so
+# git branch -d new-header
+# git push -u origin main para enviarlos cmoo nueva branch

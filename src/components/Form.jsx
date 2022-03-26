@@ -84,7 +84,7 @@ const Form =({ patients, setPatients, patient, setPatient})=> {
   return (
     <div className="md:w-1/2 lg:w-2/5">
       <h2 className="font-black text-3xl text-center">Patients</h2>
-      <p className="text-lg mt-5 text-center mb-10">Add patiens and {''}
+      <p className="text-lg mt-5 text-center mb-10">Add your pet patient and {''}
       <span className="text-indigo-600 font-bold">Manage</span>
       </p>
       <form 
@@ -94,7 +94,7 @@ const Form =({ patients, setPatients, patient, setPatient})=> {
         { error && <Error><p>You must fill all the fields</p></Error>}
         <div className="mb-5">
           <label htmlFor="name" className="block text-gray-700 uppercase font-bold">
-            Name
+            Pet Name
           </label>
           <input 
             id="name"

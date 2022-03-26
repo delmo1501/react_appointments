@@ -25,11 +25,11 @@ const PatientsList = ({patients, setPatient, deletePatient}) => {
         </>
       ) : (
           <>
-            <h2 className="font-black text-3xl text-center">Empty List</h2>
+            <h2 className="font-black text-3xl text-center">The List is Empty</h2>
             <p className="text-lg mt-5 text-center mb-10">
               Start adding your first patient! {""}
               <span className="text-indigo-600 font-bold">
-                LET'S DO IT :D
+                LET'S DO IT 😁
               </span>
             </p>
           </>
