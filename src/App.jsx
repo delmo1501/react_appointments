@@ -2,6 +2,7 @@ import { useState, useEffect  } from 'react'
 import Form from "./components/Form"
 import Header from "./components/Header"
 import PatientsList from "./components/PatientsList"
+import background from "./components/background.png"
 
 // con mt-12 flex juntamos form y patientslist, para que queden de lado
 
@@ -32,25 +33,27 @@ function App() {
   }
 
   return (
-    <div className="container mx-auto mt-20">
-      <Header
-      />
+    <div style={{ backgroundImage: `url(${background})`}}>
+      <div className="container mx-auto mt-20">
+        <Header
+        />
 
-      <div className="mt-12 md:flex">
-      <Form
-        patients={patients}
-        setPatients={setPatients}
-        patient={patient}
-        setPatient={setPatient}
-      />
-      <PatientsList
-        patients={patients}
-        setPatient={setPatient}
-        deletePatient={deletePatient}
-      />
+        <div className="mt-12 md:flex">
+        <Form
+          patients={patients}
+          setPatients={setPatients}
+          patient={patient}
+          setPatient={setPatient}
+        />
+        <PatientsList
+          patients={patients}
+          setPatient={setPatient}
+          deletePatient={deletePatient}
+        />
+        </div>
+
       </div>
-
-    </div>
+      </div>
   )
 }
 
